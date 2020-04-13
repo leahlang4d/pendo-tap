@@ -1,0 +1,50 @@
+{
+    "type": [
+        "null",
+        "object"
+    ],
+    "properties": {
+        "visitorId": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "accountId": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "pollNumResponse": {
+            "type": [
+                "null",
+                "integer"
+            ]
+        },
+        "time": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "pollQualResponse": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "guideId": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "uuid": {
+            "type": [
+                "null",
+                "string"
+            ]
+        }
+    }
+}

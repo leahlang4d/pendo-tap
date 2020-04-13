@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: tap-pendo
+Version: 0.1.0
+Summary: Singer.io tap for extracting data
+Home-page: https://app.pendo.io/api/v1/report
+Author: Stitch
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only

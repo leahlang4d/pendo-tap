@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tap_pendo/__init__.py
+tap_pendo.egg-info/PKG-INFO
+tap_pendo.egg-info/SOURCES.txt
+tap_pendo.egg-info/dependency_links.txt
+tap_pendo.egg-info/entry_points.txt
+tap_pendo.egg-info/requires.txt
+tap_pendo.egg-info/top_level.txt
+tap_pendo/schemas/sample_stream.json
+tap_pendo/schemas/soxhub_stream.json
