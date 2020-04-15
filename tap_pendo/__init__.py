@@ -202,7 +202,7 @@ def sync(config, state):
 
     # make request to get guide names and guideIds
     params = json.dumps(guide_data).encode('utf8')
-    headers ={'X-Pendo-Integration-Key': '77211473-d261-47dc-5e36-dfc6e51ab92d', 'Content-Type': 'application/json'}
+    headers ={'X-Pendo-Integration-Key': '', 'Content-Type': 'application/json'}
     req = urllib.request.Request('https://app.pendo.io/api/v1/aggregation', params, headers)
 
     response=(urllib.request.urlopen(req).read().decode())
@@ -242,7 +242,7 @@ def sync(config, state):
         }
 
         params = json.dumps(poll_data).encode('utf8')
-        headers ={'X-Pendo-Integration-Key': '77211473-d261-47dc-5e36-dfc6e51ab92d', 'Content-Type': 'application/json'}
+        headers ={'X-Pendo-Integration-Key': '', 'Content-Type': 'application/json'}
         req = urllib.request.Request('https://app.pendo.io/api/v1/aggregation', params, headers)
 
         response=(urllib.request.urlopen(req))
@@ -319,7 +319,7 @@ def sync(config, state):
         }
 
         params = json.dumps(response_data).encode('utf8')
-        headers ={'X-Pendo-Integration-Key': '77211473-d261-47dc-5e36-dfc6e51ab92d', 'Content-Type': 'application/json'}
+        headers ={'X-Pendo-Integration-Key': '', 'Content-Type': 'application/json'}
         req = urllib.request.Request('https://app.pendo.io/api/v1/aggregation', params, headers)
         response=(urllib.request.urlopen(req).read().decode())
         data_load = json.loads(response)
