@@ -248,9 +248,11 @@ def sync(config, state):
         response=(urllib.request.urlopen(req))
         data_load = response.read().decode('utf-8')
         json_obj = json.loads(data_load)
-
-        # Get pollIds in order to get the pollQualResponse and pollNumResponse
-        pollValues = (list(json_obj['results'][0].values()))
+        
+        # Get pollIds in order to get the pollNumResponse and pollQualResponse
+        pollValues =  []
+        pollValues.append(json_obj['results'][0]['pollId1'])
+        pollValues.append(json_obj['results'][0]['pollId2'])
 
         response_data = {
             "response": {
