@@ -1,2 +1,2 @@
 include LICENSE
-include tap_pendo/schemas/*.json
+include schemas/*.json
