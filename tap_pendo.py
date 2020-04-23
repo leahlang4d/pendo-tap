@@ -3,7 +3,7 @@ import os
 import json
 import singer
 import uuid
-import time
+import datetime
 import requests
 
 from singer import utils
@@ -354,7 +354,7 @@ def get_nps_responses_for_poll(guide_resource):
     if results:
         for item in results:
             item.update({"uuid": uuid.uuid4().hex[:8]})
-            item['time'] = time.strftime('%Y-%m-%d %H:%M', time.localtime(item['time']/1000))
+            item['time'] = datetime.datetime.fromtimestamp(item['time']/1000).isoformat()
         singer.write_records('nps_responses', results)
 
 
