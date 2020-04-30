@@ -17,4 +17,6 @@ This tap:
   - ***nps_responses*** is where all the responses from all the given guides will be displayed
 ---
 
+### DOCKER
+
 Copyright &copy; 2018 Stitch
