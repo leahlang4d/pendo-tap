@@ -12,7 +12,7 @@ from singer.schema import Schema
 session = requests.Session()
 logger = singer.get_logger()
 
-REQUIRED_CONFIG_KEYS = ["integration_key"]
+REQUIRED_CONFIG_KEYS = ["api_token"]
 PENDO_API_ENDPOINT = "https://app.pendo.io/api/v1/aggregation"
 
 
