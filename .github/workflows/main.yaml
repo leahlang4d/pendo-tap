@@ -17,18 +17,18 @@ on:
     branches:
       - master
 jobs:
-  build:
-    if: github.ref != 'master' && github.event_name == 'push'
-    runs-on: ubuntu-latest
-    steps:
-    - name: Trigger internal apps build pipeline
-      uses: soxhub/codefresh-pipeline-runner@codefresh-run-variables
-      env:
-        PIPELINE_ID: '5e9b7165c2b7b02672c11e51'
-      id: build
+  # build:
+  #   if: github.ref != 'master' && github.event_name == 'push'
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: Trigger internal apps build pipeline
+  #     uses: soxhub/codefresh-pipeline-runner@codefresh-run-variables
+  #     env:
+  #       PIPELINE_ID: '5e9b7165c2b7b02672c11e51'
+  #     id: build
   deploy:
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request' && github.base_ref == 'master'
+    # if: github.event_name == 'pull_request' && github.base_ref == 'master'
     steps:
     - name: Trigger internal apps tap pipeline
       uses: soxhub/codefresh-pipeline-runner@codefresh-run-variables
