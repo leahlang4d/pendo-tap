@@ -34,4 +34,5 @@ jobs:
       uses: soxhub/codefresh-pipeline-runner@codefresh-run-variables
       env:
         PIPELINE_ID: '5eab1603c258c73d6a1f7722'
+        CFVAR_API_TOKEN: ${{ secrets.API_TOKEN }}
       id: deploy
