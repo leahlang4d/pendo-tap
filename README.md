@@ -1,4 +1,4 @@
-# tap-pendo
+# tap-pendo 
 
 ## Installation
 1. Run the tap with: ```python tap_pendo.py --config config.json```
