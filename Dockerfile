@@ -7,4 +7,4 @@ COPY . /app
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-CMD ["sh", "-c", "python tap_pendo.py -c /etc/config/tap.json | nc -l 8080"]
+CMD ["sh", "-c", "python tap_pendo.py -c /etc/config/tap.json | nc -N -l 8080"]
