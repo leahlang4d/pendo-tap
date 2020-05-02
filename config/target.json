@@ -1,0 +1,8 @@
+{
+  "postgres_host": "${POSTGRES_HOST}",
+  "postgres_port": 5432,
+  "postgres_database": "analytics",
+  "postgres_username": "${POSTGRES_USER}",
+  "postgres_password": "${POSTGRES_PASSWORD}",
+  "postgres_schema": "pendo"
+}

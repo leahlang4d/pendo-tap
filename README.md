@@ -1,4 +1,4 @@
-# tap-pendo
+# tap-pendo 
 
 ## Installation
 1. Run the tap with: ```python tap_pendo.py --config config.json```
@@ -16,5 +16,7 @@ This tap:
   - ***guides*** is all the guides available
   - ***nps_responses*** is where all the responses from all the given guides will be displayed
 ---
+
+### DOCKER
 
 Copyright &copy; 2018 Stitch

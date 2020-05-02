@@ -12,7 +12,7 @@ from singer.schema import Schema
 session = requests.Session()
 logger = singer.get_logger()
 
-REQUIRED_CONFIG_KEYS = ["integration_key"]
+REQUIRED_CONFIG_KEYS = ["api_token"]
 PENDO_API_ENDPOINT = "https://app.pendo.io/api/v1/aggregation"
 
 
@@ -361,7 +361,7 @@ def get_nps_responses_for_poll(guide_resource):
 def sync(config, state):
     """ Sync data from pendo """
     # Load soxhub_stream and guide_stream schemas
-    PENDO_INTEGRATION_KEY = config['integration_key']
+    PENDO_INTEGRATION_KEY = config['api_token']
 
     # default headers to use when interfacing with pendo API
     session.headers.update({
